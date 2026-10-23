@@ -6,7 +6,10 @@ import os
 # STEP 1: Find the folder containing this Python file
 # ---------------------------------------------------------
 
-current_folder = os.path.dirname(os.path.abspath(__file__))
+src_folder = os.path.dirname(os.path.abspath(__file__))
+assignment_folder = os.path.dirname(src_folder)
+images_folder = os.path.join(assignment_folder, "images")
+#current_folder = os.path.dirname(os.path.abspath(__file__))
 
 
 # ---------------------------------------------------------
@@ -103,7 +106,7 @@ input_images = [
 
 for filename, name in input_images:
 
-    image_path = os.path.join(current_folder, filename)
+    image_path = os.path.join(images_folder, filename)
 
     image = Image.open(image_path).convert("L")
 
@@ -113,7 +116,7 @@ for filename, name in input_images:
 
     zero_result.save(
         os.path.join(
-            current_folder,
+            images_folder,
             name + "_mean_zero_padding.png"
         )
     )
@@ -124,7 +127,7 @@ for filename, name in input_images:
 
     border_result.save(
         os.path.join(
-            current_folder,
+            images_folder,
             name + "_mean_border_padding.png"
         )
     )

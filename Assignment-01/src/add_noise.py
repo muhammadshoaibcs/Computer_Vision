@@ -8,11 +8,18 @@ import random
 import math
 import os
 
-# Get the folder where this Python file is located
-current_folder = os.path.dirname(os.path.abspath(__file__))
+# ---------------------------------------------------------
+# PATH SETUP
+# ---------------------------------------------------------
 
-# Build the full path to the image
-image_path = os.path.join(current_folder, "original.png")
+# Current src folder
+src_folder = os.path.dirname(os.path.abspath(__file__))
+
+# Assignment-01 folder
+assignment_folder = os.path.dirname(src_folder)
+
+# Images folder
+images_folder = os.path.join(assignment_folder, "images")
 
 # ---------------------------------------------------------
 # STEP 1: Open the original image
@@ -20,7 +27,8 @@ image_path = os.path.join(current_folder, "original.png")
 
 # "L" means grayscale image.
 # Pixel values will be between 0 and 255.
-image = Image.open("original.png").convert("L")
+image_path = os.path.join(images_folder, "original.png")
+image = Image.open(image_path).convert("L")
 
 # Get image width and height.
 width, height = image.size
@@ -158,11 +166,13 @@ for y in range(height):
 # ---------------------------------------------------------
 # STEP 6: SAVE OUTPUT IMAGES
 # ---------------------------------------------------------
+gaussian_image.save(
+    os.path.join(images_folder, "gaussian_noise.png")
+)
 
-gaussian_image.save("gaussian_noise.png")
-
-salt_pepper_image.save("salt_pepper_noise.png")
-
+salt_pepper_image.save(
+    os.path.join(images_folder, "salt_pepper_noise.png")
+)
 
 # ---------------------------------------------------------
 # STEP 7: Display completion message

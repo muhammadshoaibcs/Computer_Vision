@@ -5,7 +5,10 @@ import os
 # Find the folder containing this Python file
 # ---------------------------------------------------------
 
-current_folder = os.path.dirname(os.path.abspath(__file__))
+src_folder = os.path.dirname(os.path.abspath(__file__))
+assignment_folder = os.path.dirname(src_folder)
+images_folder = os.path.join(assignment_folder, "images")
+#current_folder = os.path.dirname(os.path.abspath(__file__))
 
 # ---------------------------------------------------------
 # Function to get a pixel with padding
@@ -89,7 +92,7 @@ input_images = [
 for filename, name in input_images:
 
     image = Image.open(
-        os.path.join(current_folder, filename)
+        os.path.join(images_folder, filename)
     ).convert("L")
 
 
@@ -97,7 +100,7 @@ for filename, name in input_images:
 
     zero_result.save(
         os.path.join(
-            current_folder,
+            images_folder,
             name + "_minimum_zero.png"
         )
     )
@@ -107,7 +110,7 @@ for filename, name in input_images:
 
     border_result.save(
         os.path.join(
-            current_folder,
+            images_folder,
             name + "_minimum_border.png"
         )
     )
