@@ -1,0 +1,27 @@
+Filter / Image,Filename,MSE
+Salt-Pepper - Median - Border Padding,salt_pepper_median_border.png,11.8926
+Salt-Pepper - Median - Zero Padding,salt_pepper_median_zero.png,19.6565
+Gaussian - Mean - Border Padding,gaussian_mean_border_padding.png,56.9947
+Gaussian - Weighted Mean - Border Padding,gaussian_weighted_mean_border.png,57.6366
+Gaussian Noise - Gaussian Filter - Border Padding,gaussian_gaussian_filter_border.png,58.2636
+Gaussian Noise - Gaussian Filter - Zero Padding,gaussian_gaussian_filter_zero.png,63.5776
+Gaussian - Weighted Mean - Zero Padding,gaussian_weighted_mean_zero.png,64.0091
+Gaussian - Mean - Zero Padding,gaussian_mean_zero_padding.png,64.8848
+Gaussian - Median - Border Padding,gaussian_median_border.png,78.6362
+Gaussian - Median - Zero Padding,gaussian_median_zero.png,86.6583
+Salt-Pepper - Mean - Border Padding,salt_pepper_mean_border_padding.png,157.9628
+Salt-Pepper - Mean - Zero Padding,salt_pepper_mean_zero_padding.png,165.021
+Salt-Pepper - Weighted Mean - Border Padding,salt_pepper_weighted_mean_border.png,165.3995
+Salt-Pepper - Gaussian Filter - Border Padding,salt_pepper_gaussian_filter_border.png,166.1514
+Salt-Pepper - Gaussian Filter - Zero Padding,salt_pepper_gaussian_filter_zero.png,170.5252
+Salt-Pepper - Weighted Mean - Zero Padding,salt_pepper_weighted_mean_zero.png,170.9183
+Gaussian Noise,gaussian_noise.png,353.016
+Gaussian - Minimum - Border Padding,gaussian_minimum_border.png,985.2554
+Gaussian - Minimum - Zero Padding,gaussian_minimum_zero.png,1025.0661
+Gaussian - Maximum - Zero Padding,gaussian_maximum_zero.png,1112.0887
+Gaussian - Maximum - Border Padding,gaussian_maximum_border.png,1112.0887
+Salt-Pepper Noise,salt_pepper_noise.png,1126.9888
+Salt-Pepper - Minimum - Border Padding,salt_pepper_minimum_border.png,2894.1114
+Salt-Pepper - Minimum - Zero Padding,salt_pepper_minimum_zero.png,2933.6636
+Salt-Pepper - Maximum - Zero Padding,salt_pepper_maximum_zero.png,6686.8568
+Salt-Pepper - Maximum - Border Padding,salt_pepper_maximum_border.png,6686.8568
